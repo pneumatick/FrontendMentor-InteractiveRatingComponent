@@ -1,0 +1,91 @@
+* {
+    font-family: 'Overpass', sans-serif;
+}
+
+html {
+    background-color: hsl(216, 12%, 8%);
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+}
+
+img {
+    width: 16px;
+    height: 16px;
+    padding: 16px;
+    border-radius: 32px;
+    background-color: #353e47;
+}
+
+h1 {
+    color:hsl(0, 0%, 100%);
+    margin: 0;
+}
+
+p {
+    font-size: 15px;
+    color:hsl(217, 12%, 63%);
+}
+
+.rating-panel, .submission-message {
+    background-color: hsl(213, 19%, 18%);
+    width: 350px;
+    height: 400px;
+    padding: 24px;
+    box-sizing: border-box;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    flex-direction: column;
+    border-radius: 14px;
+}
+
+.rating-panel {
+    z-index: 1;
+}
+
+.ratings {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating-number {
+    border: none;
+    font-size: 18px;
+    width: 48px;
+    height: 48px;
+    color: hsl(217, 12%, 63%);
+    background-color: #353e47;
+    border-radius: 48px; 
+}
+
+.rating-number:hover:not(:focus) {
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+}
+
+.rating-number:focus {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+
+.submit {
+    background-color:hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+.submit:active {
+    background-color: hsl(0, 0%, 100%);
+    color:hsl(25, 97%, 53%);
+}
