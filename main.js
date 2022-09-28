@@ -2,6 +2,7 @@ const ratingPanel = document.getElementById('rating-panel');
 const submissionMessage = document.getElementById('submission-message');
 const ratingNumbers = [...document.querySelectorAll(".rating-number")];
 const submitButton = document.getElementById('submit-button');
+const ratingSpan = document.getElementById('rating-span');
 const bluishGrey = '#353e47';
 const lightGrey = 'hsl(217, 12%, 63%)';
 const white = 'hsl(0, 0%, 100%)';
@@ -37,6 +38,7 @@ function selectRating(event) {
 
 function submitRating(event) {
     ratingPanel.style.display = 'none';
+    ratingSpan.innerHTML = rating;
     submissionMessage.style.display = 'flex';
 }
 
